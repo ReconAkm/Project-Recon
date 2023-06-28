@@ -1,0 +1,375 @@
+<html>
+	<head>
+		<title>Anything</title>
+		<style type='text/css'>
+			body{
+				margin:0;
+
+			}
+			#mainarea{
+				width:1200px;
+				height:1500px;
+				background:orange;
+				margin:0 auto;
+			}
+			#toparea{
+				width:1200px;
+				height:150px;
+				background:green;
+			}
+			#logoarea{
+				width:150px;
+				height:150px;
+				background:red;
+				float:left;
+				}
+			#logoarea img{
+				margin:15px;
+				}
+			#titlearea{
+				width:1050px;
+				height:150px;
+				background:black;
+				float:left;
+				}
+			#menuarea{
+				width:1200px;
+				height:50px;
+				background:grey;
+				position:sticky;
+				top:0;
+				z-index:1500;
+				}
+			#menuarea ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+				}
+			#menuarea ul li{
+					float:left;
+				}
+			#menuarea ul a:link,#menuarea ul li a:visited{
+					color:white;
+					text-decoration:none;
+					background:red;
+					padding:10px 25px;
+					display:block;
+					border-right: solid 1px black;
+				}
+			#menuarea ul li a:hover{
+					color:red;
+					background:white;
+				}
+			#menuarea ul li ul{
+					display:none;
+				}
+			#menuarea ul li:hover ul{
+					Display:block;
+					position:absolute;
+					z-index:1000;
+				}
+			#menuarea ul li:hover ul li{
+					float:none;
+				}
+			#menuarea ul li:hover ul li a:link,menuarea ul li:hover ul li a visited{
+					border:none;
+					border-bottom:solid 1px black;
+					
+				}
+			@keyframes jsr{
+					0%{
+
+					}
+					10%{
+						transform:translate(0,0);
+						background:url(1.png);
+						background-repeat:no-repeat;
+					}
+					20%{
+						/*transform:translate(800px,200px);*/
+						background:url(3.png);
+						background-repeat:no-repeat;
+					}
+					40%{
+						/*transform:translate(0,200PX);*/
+						background:url(4.png);
+						background-repeat:no-repeat;
+					}
+					50%{
+						background:url(5.png);
+						background-repeat:no-repeat;
+					}
+					60%{
+						background:url(6.png);
+						background-repeat:no-repeat;
+					}
+					70%{
+						background:url(7.png);
+						background-repeat:no-repeat;
+					}
+					80%{
+						background:url(8.png);
+						background-repeat:no-repeat;
+					}
+					100%{
+						transform:translate(1200px,0);
+						background:url(9.png);
+						background-repeat:no-repeat;
+					}
+				}
+
+			#slidearea{
+				width:1200px;
+				height:300px;
+				background:white;
+				overflow:hidden;
+				
+				}
+			
+			#slidein{
+				height:100px;
+				width:100px;
+				background:1.png;
+				animation-name:jsr;
+				animation-duration:3s;
+				animation-iteration-count:infinite;
+				/*animation-direction:reverse;*/
+				animation-fill-mode:both;
+				}
+			#darea{
+				width:1200px;
+				height:300px;
+				background:pink;
+				float:left;
+				}
+			.dbox{
+				width:100px;
+				height:0px;
+				float:left;
+				margin:50px 100px;
+				/*border-top:solid 50px black;*/
+				border-right:solid 50px transparent;
+				border-bottom:solid 50px green;
+				border-left:solid 50px transparent;
+				}
+			#boxarea{
+				width:1200px;
+				height:300px;
+				background:navy;
+				float:left;
+				}
+			.box{
+				width:300px;
+				height:200px;
+				float:left;
+				margin:50px 50px 50px 50px;
+				background-color:seagreen;
+				position:relative;
+				}
+			.box img{
+				width:100%;
+				height:100%;
+				}
+			.details{
+				position:absolute;
+				bottom:0;
+				background-color:red;
+				width:100%;
+				height:0px;
+				/*border-radius:0 0 0 100%;*/
+				transition:all 1s;
+				}
+			.box:hover .details{
+				width:100%;
+				height:100%;
+				border-radius:0;
+				}
+			.box h1{
+				position:absolute;
+				text-align:center;
+				top:40%;
+				width:100%;
+				display:none;
+				}
+			.box:hover h1{
+				display:block;
+				}
+			#footarea{
+				width:1200px;
+				height:410px;
+				background:pink;
+				float:left;
+				}
+			
+			.footarea{
+				width:240px;
+				height:350px;
+				background:navy;
+				float:left;
+				margin:30px 30px 30px 30px;
+				}
+			.footarea p{
+					color:red;
+				}
+			/*.footarea p:first-child{
+					color:yellow;
+				}
+			.footarea p:last-child{
+					color:orange;
+				}*/
+			.footarea p:nth-child(2n)
+				{
+					color:green;
+				}
+			.footarea a:link,.footarea a:visited{
+					color:white;
+					text-decoration:none;
+					background:red;
+					padding:10px 25px;
+				}
+			.footarea a:hover{
+					color:orange;
+					background:red;
+				}
+			.footarea ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+				}
+			.footarea ul a:link,.footarea ul li a:visited{
+					color:white;
+					text-decoration:none;
+					background:red;
+					padding:10px 25px;
+					display:block;
+					border-bottom: solid 1px black;
+				}
+			.footarea ul li a:hover{
+					color:red;
+					background:white;
+				}
+			#rmenu{
+				width:50px;
+				height:200px;
+				background:green;
+				position:fixed;
+				top:150px;
+				right:0;
+				}
+			
+			
+			
+
+	
+		</style>
+			
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+					<img src="logo.png"/>
+				</div>
+				<div id="titlearea">
+				</div>
+			</div>
+			<div id="menuarea">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">PRODUCTS</a>
+							<ul>
+								<li> <a href="#">Product1</a> </li>
+								<li> <a href="#">Product2</a> </li>
+								<li> <a href="#">Product3</a> </li>
+								<li> <a href="#">Product4</a> </li>
+								<li> <a href="#">Product5</a> </li>
+							</ul>
+						</li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+			</div>
+			<div id="slidearea">
+				<div id="slidein">
+				</div>
+			</div>
+			<div id="darea">
+				<div class="dbox bg1">
+				</div>
+				<div class="dbox bg2">
+				</div>
+			</div>
+			<div id="boxarea">
+				<div class="box">
+					<img src="bg.jpg">
+						<div class="details">
+							
+						</div>
+				</div>
+				<div class="box">
+					<img src="bg.jpg">
+						<div class="details">
+							
+						</div>
+
+					<h1> Recon Akm</h1>
+					
+				</div>
+				<div class="box">
+					<img src="bg.jpg">
+						<div class="details">
+							
+						</div>
+				</div>	
+			</div>
+			<div id="footarea">
+				<div class="footarea">
+					<p>
+					<b>
+						Manohar choudhary
+					</b>
+					</p>
+					<p>
+					<b>
+						Manohar choudhary
+					</b>
+					</p>
+					<p
+					<b>
+						Manohar choudhary
+					</b>
+					</p>
+					<p>
+					<b>
+						Manohar choudhary
+					</b>
+					</p>
+					<p>
+					<b>
+						Manohar choudhary
+					</b>
+					</p>
+				</div>
+				<div class="footarea">
+					<a href="http://www.google.com">GOOGLE</a>
+					<a href="http://www.naukri.com">NAUKRI</a>
+				</div>
+				<div class="footarea">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="footarea">
+				</div>
+			</div>
+
+		</div>
+		<div id="rmenu">
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			slide
+		</title>
+		<style type='text/css'>
+			body{
+			}
+			#mainarea{
+				width:1200px;
+				height:100px;
+				margin:0 auto;
+			}
+			#slide{
+				width:600px;
+				height:100px;
+				background:green;
+				float:left;
+			}
+			#slide2{
+				width:200px;
+				height:100px;
+				background:blue;
+				float:left;
+			}
+			@media screen and (max-width:1000px){
+				#mainarea,#slide,#slide2{
+						width:100%;
+					}
+				}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="slide">
+				<div id="slide2">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
